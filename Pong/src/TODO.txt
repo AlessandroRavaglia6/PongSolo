@@ -1,0 +1,37 @@
+
+{maybe} class / function ShaderCodeReader -> read the code from file and output a const* GLchar const*
+
+
+-- [Renderer] -> map<Program, RenderObject>
+
+
+-1) RenderObject { indexChangedFirst, idexChangedLast } -> VBO.bufferSubData(first to last);
+
+
+0) Refactor all the code in the Model folder
+
+
+1) Possible [RenderScene]
+
+	RenderScene
+	{
+		map<programId, >
+		collection<RenderObject> _objectToRender;
+	}
+
+
+
+[...] Integrate All inside the Renderer class
+
+
+Considerations:
+
+	- (Any game object is different) -> RenderObject, RenderObjectInstance, PrefabRenderObject, PrefabRenderObjectInstance
+	  
+	  To enable [InstancedDraw], first create a game object and mark it as a prefab, than, create prefab insances (and render them)
+
+	
+	- (The draw calls need to be specified as late as possible)
+	  
+	  The Renderer need to keep all the necessary data to specify them and it will have a method [GenerateDrawCalls] that create the
+	  draw calls array

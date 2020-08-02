@@ -1,0 +1,4 @@
+﻿  Dummy.cpp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+Dummy.obj : error LNK2019: unresolved external symbol __imp_glClear referenced in function main
+C:\Users\Alessandro\Desktop\Cpp\PongSolo\x64\Debug\Pong.exe : fatal error LNK1120: 1 unresolved externals

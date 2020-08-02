@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{57DFC81D-C234-452F-A919-B6C7860F83C3}</ProjectGuid>
+    <RootNamespace>Pong</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;User32.lib;Gdi32.lib;Shell32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32s.lib;User32.lib;Gdi32.lib;Shell32.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\FileManagement\VertexAttribSerializer.cpp" />
+    <ClCompile Include="src\Rendering\Renderer\DrawCall\DrawCallDrawArraysInstanced.cpp" />
+    <ClCompile Include="src\Rendering\Renderer\DrawCall\DrawCallDrawElementsInstanced.cpp" />
+    <ClCompile Include="src\Rendering\Program.cpp" />
+    <ClCompile Include="src\Rendering\RenderObject\Attribute.cpp" />
+    <ClCompile Include="src\Rendering\RenderObject\RenderObject.cpp" />
+    <ClCompile Include="src\Rendering\RenderObject\RenderObjectInstance.cpp" />
+    <ClCompile Include="src\Rendering\RenderObject\VertexArrayManager.cpp" />
+    <ClCompile Include="src\Rendering\RenderObject\VertexArrayObject.cpp" />
+    <ClCompile Include="src\Rendering\RenderObject\VertexAttribArray.cpp" />
+    <ClCompile Include="src\Rendering\RenderObject\VertexBufferManager.cpp" />
+    <ClCompile Include="src\Rendering\RenderObject\VertexBufferObject.cpp" />
+    <ClCompile Include="src\Rendering\Shader\Shader.cpp" />
+    <ClCompile Include="src\Rendering\Shader\ShaderSourceCode.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Rendering\Renderer\DrawCall\DrawCall.cpp" />
+    <ClCompile Include="src\Rendering\Renderer\DrawCall\DrawCallDrawArrays.cpp" />
+    <ClCompile Include="src\Rendering\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Utilities\ShaderBuilder.cpp" />
+    <ClCompile Include="src\Utilities\FileReader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\FileManagement\VertexAttribSerializer.h" />
+    <ClInclude Include="src\PreprocessorSettings.h" />
+    <ClInclude Include="src\Rendering\Model\Model.h" />
+    <ClInclude Include="src\Rendering\Model\ModelLoader.h" />
+    <ClInclude Include="src\Rendering\Model\ModelLoader_STL.h" />
+    <ClInclude Include="src\Rendering\Program.h" />
+    <ClInclude Include="src\Rendering\Renderer\DrawCall\DrawCallDrawArraysInstanced.h" />
+    <ClInclude Include="src\Rendering\Renderer\DrawCall\DrawCallDrawElementsInstanced.h" />
+    <ClInclude Include="src\Rendering\RenderObject\Attribute.h" />
+    <ClInclude Include="src\Rendering\RenderObject\RenderObject.h" />
+    <ClInclude Include="src\Rendering\RenderObject\RenderObjectInstance.h" />
+    <ClInclude Include="src\Rendering\RenderObject\VertexArrayManager.h" />
+    <ClInclude Include="src\Rendering\RenderObject\VertexArrayObject.h" />
+    <ClInclude Include="src\Rendering\RenderObject\VertexAttribArray.h" />
+    <ClInclude Include="src\Rendering\RenderObject\VertexBufferManager.h" />
+    <ClInclude Include="src\Rendering\RenderObject\VertexBufferObject.h" />
+    <ClInclude Include="src\Rendering\Shader\Shader.h" />
+    <ClInclude Include="src\Rendering\Shader\ShaderSourceCode.h" />
+    <ClInclude Include="src\Rendering\Shader\ShaderType.h" />
+    <ClInclude Include="src\Rendering\Renderer\DrawCall\DrawCall.h" />
+    <ClInclude Include="src\Rendering\Renderer\DrawCall\DrawCallDrawArrays.h" />
+    <ClInclude Include="src\Rendering\Renderer\Renderer.h" />
+    <ClInclude Include="src\Utilities\ShaderBuilder.h" />
+    <ClInclude Include="src\Utilities\FileReader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ShaderFiles\prova.txt" />
+    <Text Include="src\TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3DModels\Cube.stl" />
+    <None Include="3DModels\Head.stl" />
+    <None Include="3DModels\ico.stl" />
+    <None Include="3DModels\Membrane.stl" />
+    <None Include="3DModels\Plane.stl" />
+    <None Include="3DModels\S2.stl" />
+    <None Include="3DModels\Sphere.stl" />
+    <None Include="ShaderFiles\cel.frag" />
+    <None Include="ShaderFiles\cel.vert" />
+    <None Include="ShaderFiles\flat.frag" />
+    <None Include="ShaderFiles\flat.vert" />
+    <None Include="ShaderFiles\Phong.frag" />
+    <None Include="ShaderFiles\Phong.vert" />
+    <None Include="ShaderFiles\p_shade.frag" />
+    <None Include="ShaderFiles\p_shade.vert" />
+    <None Include="ShaderFiles\shade.frag" />
+    <None Include="ShaderFiles\shade.vert" />
+    <None Include="ShaderFiles\shader.frag" />
+    <None Include="ShaderFiles\shader.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
