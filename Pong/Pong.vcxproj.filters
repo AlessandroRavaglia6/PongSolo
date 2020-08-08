@@ -149,6 +149,9 @@
     <ClInclude Include="src\Rendering\RenderObject\VertexArrayManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\FileManagement\Parser\Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ShaderFiles\prova.txt" />

@@ -163,6 +163,7 @@
     <ClCompile Include="src\Utilities\FileReader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\FileManagement\Parser\Parser.h" />
     <ClInclude Include="src\FileManagement\VertexAttribSerializer.h" />
     <ClInclude Include="src\PreprocessorSettings.h" />
     <ClInclude Include="src\Rendering\Model\Model.h" />
