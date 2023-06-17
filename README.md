@@ -1,5 +1,5 @@
 # PongSolo
-(Work in Progress) PongSolo is my first attempt to build a game engine.
+(Work in Progress) PongSolo is my first attempt to build a renderer.
 
 The TODO list file (/Pong/TODO.txt) may not be updated, and is merely ment to keep notes.
 
